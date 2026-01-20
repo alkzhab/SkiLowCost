@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+
+
+nav {
+    width: 200px;
+    background: #2c3e50;
+    color: white;
+    height: 100vh;
+    padding-top: 70px; /* pour laisser place à header */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav button {
+    width: 100%;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 5px solid transparent;
+    transition: background 0.3s, border-left-color 0.3s;
+}
+
+nav button:hover, nav button.active {
+    background: #34495e;
+    border-left-color: #e67e22;
+}
+
+nav a.tab-button {
+    display: block; /* comme un bouton en bloc */
+    width: 100%;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    text-decoration: none; /* enlève le soulignement */
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 5px solid transparent;
+    transition: background 0.3s, border-left-color 0.3s;
+}
+
+nav a.tab-button:hover,
+nav a.tab-button.active {
+    background: #34495e;
+    border-left-color: #e67e22;
+}
+
+
+main {
+    margin-left: 200px;
+    padding: 80px 20px 20px 20px; /* marge top pour header */
+    flex-grow: 1;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+
+.btn {
+    width: 30%;
+    padding: 12px;
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+
+#dashboard {
+    margin-top: 3rem;
+}
+
+#dashboard h2 {
+    margin-bottom: 2rem;
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-card {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.dashboard-card h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.dashboard-card p {
+    margin: 0.5rem 0 0;
+    color: #6c757d;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    border: 1px solid #dee2e6;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.dashboard-table th {
+    background-color: #e9ecef;
+}
+
+.btn_supprimer {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.btn_supprimer {
+    background-color: #dc3545;
+}
+
+.btn_supprimer:hover {
+    background-color: #a71d2a;
+}
